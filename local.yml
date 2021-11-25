@@ -10,3 +10,7 @@
     - include: tasks/js.yml
     - include: tasks/go.yml
     - include: tasks/services.yml
+    - include: tasks/ssh.yml
+    - include: tasks/git.yml
+    - include: tasks/dotfiles.yml
+    - include: tasks/nvim.yml
