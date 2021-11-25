@@ -1,0 +1,78 @@
+- name: install essesntials
+  become: true
+  xbps: name={{item}}
+  with_items:
+    - xorg-minimal
+    - cwm
+    - xf86-video-intel
+    - mesa-intel-dri 
+    - libva-intel-driver
+    - intel-ucode 
+    - intel-media-driver 
+    - intel-video-accel 
+    - linux-firmware-intel
+    - sysfsutils
+    - xterm
+    - ninja 
+    - gettext 
+    - libtool  
+    - autoconf 
+    - automake 
+    - cmake 
+    - pkg-config 
+    - unzip 
+    - curl
+    - doxygen
+    - make 
+    - bison 
+    - flex 
+    - tlp
+    - yt-dlp
+    - ffmpeg
+    - bat
+    - feh
+    - iwgtk
+    - python3
+    - podman 
+    - pcmanfm
+    - xrdb
+    - zoxide
+    - xtools
+
+
+- name: install core pkgs
+  become: true
+  xbps: name={{item}}
+  with_items:
+    - void-repo-nonfree
+    - htop
+    - git
+    - xcape
+    - sxhkd
+    - tmux
+    - mpd
+    - ncmpcpp
+    - firefox
+    - chromium
+    - dunst
+    - dzen2
+    - xsetroot
+    - udiskie
+    - gvfs
+    - terraform
+    - syncthing 
+    - zathura
+    - hugo
+    - zathura-pdf-mupdf
+    - mpv 
+    - light
+    - breeze-snow-cursor-theme
+    - plata-theme
+    - lxappearance
+    - dmenu
+    - zramen
+    - fzf
+    - xdg-user-dirs 
+
+- name:
+  shell: xdg-user-dirs-update

@@ -1,0 +1,25 @@
+- name: install service apps
+  become: yes
+  xbps: name={{item}}
+  with_items:
+    - iwd
+    - dbus
+    - openntpd
+    - openssh
+    - pulseaudio
+    - socklog-void
+
+- name: Starting services
+  become: yes
+  file:
+    src: "/etc/sv/{{item}}"
+    dest: "/var/service/{{item}}"
+    state: link
+  with_items:
+    - iwd
+    - dbus
+    - openntpd
+    - sshd
+    - tlp
+    - ufw
+    - zramen

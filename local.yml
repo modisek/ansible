@@ -1,0 +1,12 @@
+- hosts: localhost
+  pre_tasks:
+    - name: Update xbps
+      become: true
+      xbps: 
+        update_cache: true
+        state: present
+  tasks:
+    - include: tasks/core.yml
+    - include: tasks/js.yml
+    - include: tasks/go.yml
+    - include: tasks/services.yml

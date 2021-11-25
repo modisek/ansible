@@ -1,0 +1,4 @@
+- name: install node and npm
+  become: true
+  xbps: 
+    name: nodejs

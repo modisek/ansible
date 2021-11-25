@@ -1,0 +1,4 @@
+- name: install go and gopls
+  become: yes
+  xbps:
+    name: ["go", "gopls"]
