@@ -1,0 +1,47 @@
+- name: install core pkgs
+  become: true
+  xbps: name={{item}}
+  with_items:
+    - void-repo-nonfree
+    - htop
+    - git
+    - xcape
+    - sxhkd
+    - tmux
+    - mpd
+    - neovim 
+    - ncmpcpp
+    - xsetroot
+    - udiskie
+    - gvfs
+    - terraform
+    - hugo
+    - light
+    - dmenu
+    - zramen
+    - fzf
+    - podman 
+    - xrdb
+    - zoxide
+    - xtools
+    - xdg-user-dirs 
+    - ninja 
+    - gettext 
+    - libtool  
+    - autoconf 
+    - automake 
+    - cmake 
+    - pkg-config 
+    - unzip 
+    - curl
+    - doxygen
+    - make 
+    - bison 
+    - flex 
+    - tlp
+    - yt-dlp
+    - ffmpeg
+    - bat
+
+- name:
+  shell: xdg-user-dirs-update

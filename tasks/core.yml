@@ -1,4 +1,4 @@
-- name: install essesntials
+- name: install core essentials
   become: true
   xbps: name={{item}}
   with_items:
@@ -13,66 +13,17 @@
     - linux-firmware-intel
     - sysfsutils
     - xterm
-    - ninja 
-    - gettext 
-    - libtool  
-    - autoconf 
-    - automake 
-    - cmake 
-    - pkg-config 
-    - unzip 
-    - curl
-    - doxygen
-    - make 
-    - bison 
-    - flex 
-    - tlp
-    - yt-dlp
-    - ffmpeg
-    - bat
-    - feh
-    - iwgtk
-    - python3
-    - podman 
-    - pcmanfm
-    - xrdb
-    - zoxide
-    - xtools
-
-
-- name: install core pkgs
-  become: true
-  xbps: name={{item}}
-  with_items:
-    - void-repo-nonfree
-    - htop
-    - git
-    - xcape
-    - sxhkd
-    - tmux
-    - mpd
-    - ncmpcpp
     - firefox
     - chromium
-    - dunst
-    - dzen2
-    - xsetroot
-    - udiskie
-    - gvfs
-    - terraform
+    - feh
+    - iwgtk
+    - pcmanfm
     - syncthing 
     - zathura
-    - hugo
-    - zathura-pdf-mupdf
-    - mpv 
-    - light
     - breeze-snow-cursor-theme
     - plata-theme
     - lxappearance
-    - dmenu
-    - zramen
-    - fzf
-    - xdg-user-dirs 
-
-- name:
-  shell: xdg-user-dirs-update
+    - zathura-pdf-mupdf
+    - mpv 
+    - dunst
+    - dzen2
