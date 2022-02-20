@@ -1,27 +1,21 @@
-- name: install core pkgs
+- name: install utilities
   become: true
   xbps: name={{item}}
   with_items:
     - void-repo-nonfree
     - htop
     - git
-    - xcape
-    - sxhkd
     - tmux
-    - mpd
     - neovim 
-    - ncmpcpp
-    - xsetroot
     - udiskie
     - gvfs
     - terraform
     - hugo
     - light
-    - dmenu
+    - dmenu-wayland
     - zramen
     - fzf
     - podman 
-    - xrdb
     - zoxide
     - xtools
     - xdg-user-dirs 
@@ -38,10 +32,19 @@
     - make 
     - bison 
     - flex 
-    - tlp
     - yt-dlp
     - ffmpeg
     - bat
+    - clipman 
+    - exa 
+    - fd
+    - ffmpeg
+    - grim
+    - mosh
+    - newsboat 
+    - tig
+    - vpm 
+    - vsv
 
 - name:
   shell: xdg-user-dirs-update

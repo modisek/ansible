@@ -2,9 +2,10 @@
   become: true
   xbps: name={{item}}
   with_items:
-    - xorg-minimal
-    - cwm
-    - xf86-video-intel
+    - wayland
+    - sway
+    - swayidle
+    - swaylock
     - mesa-intel-dri 
     - libva-intel-driver
     - intel-ucode 
@@ -12,10 +13,10 @@
     - intel-video-accel 
     - linux-firmware-intel
     - sysfsutils
-    - xterm
+    - foot
     - firefox
     - chromium
-    - feh
+    - imv
     - iwgtk
     - pcmanfm
     - syncthing 
@@ -25,5 +26,9 @@
     - lxappearance
     - zathura-pdf-mupdf
     - mpv 
-    - dunst
-    - dzen2
+    - mpd
+    - ncmpcpp
+    - mako
+    - terminus-font
+    - ngetty
+    - elogind

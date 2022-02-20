@@ -8,6 +8,8 @@
     - openssh
     - pulseaudio
     - socklog-void
+    - tlp
+    - ufw
 
 - name: Starting services
   become: yes
